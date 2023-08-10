@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, SP" />
+  <title>Sunshine Garden Center - Home</title>
+  <!-- Link the common stylesheet -->
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="flex">
+      <a href="index.html" class="logo">
+        <img src="images/default.png" alt="Sunshine logo" />
+      </a>
+    </div>
+    <nav class="nav-horizontal">
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="about"><a href="about.html">About Us</a></li>
+        <li class="services"><a href="services.html">Services</a></li>
+        <li class="our-plants"><a href="ourplants.html">Our Plants</a></li>
+        <li class="contact"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contact" id="contact-page">
+    <h2 class="center-text">Our team is here to support your gardening journey every step of the way</h2>
+    <form>
+      <div class="flex">
+        <label for="user-name">Your name:</label>
+        <input type="text" id="user-name">
+      </div>
+      <div class="flex">
+        <label for="user-email">Your email:</label>
+        <input type="email" id="user-email">
+      </div>
+      <div class="flex">
+        <label for="user-message">Your message:</label>
+        <textarea id="user-message"></textarea>
+      </div>
+      <button class="fake-button center-button blue-hover" type="submit" id="submit-button">Green Thumb!</button>
+    </form>
+  </main>
+  <footer class="contact-footer">
+    <img src="images/plants2.png" alt="Sunshine on Little plants" class="section-image"/>
+    <p>
+      Logos created by <a href="https://www.namecheap.com/logo-maker/app/" title="Logo icons">Logo Maker</a>
+    </p>
+    <p>
+      Photo by <a href="https://unsplash.com/photos/NE0XGVKTmcA">Photographer</a> on Unsplash
+    </p>
+  </footer>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
+

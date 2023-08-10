@@ -1,0 +1,549 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Set a background color for the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #30475e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  height: 150px;
+}
+
+/* Style the logo */
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  display:block;
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  overflow:hidden;
+}
+
+/* Navigation styles */
+nav {
+  height: 60px;
+}
+
+.nav-horizontal ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-horizontal li {
+  margin: 0 10px;
+}
+
+.nav-horizontal a {
+  text-decoration:overline;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-horizontal a:hover {
+  color: #f5c99a;
+}
+
+/* Common styles for text and content */
+.welcome-container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.welcome-text {
+  font-size: 32px;
+  color: #007bff;
+  margin: 0;
+}
+
+.content strong {
+  font-weight: 600;
+}
+
+.content {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 50px;
+}
+
+.content em {
+  font-style: italic;
+  color: #4caf50;
+}
+
+/* Section image and text styles */
+.section-image-container {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-image {
+  align-items: center;
+  max-width: 50%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+/* Introduction section styles */
+.index .section-background {
+  background-color: #f0d8bf;
+  padding: 80px 0;
+  color: #2a394e;
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content: space-evenly
+}
+
+.index .section-background .section-image {
+  max-width: 150%;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.index .section-background .section-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* about us style */
+
+.index {
+  display:flex;
+}
+
+.center-text {
+  text-align: center;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+.fake-button {
+    background-color: green;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.center-button {
+  display: block;
+  margin: 20px auto;
+}
+
+.page-footer {
+  color: white;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin as desired */
+}
+
+/* Center button horizontally */
+.center-button {
+  display: block;
+  margin: 20px auto;
+}
+
+.user-message{
+font-size: 18px;
+text-align: center;
+color: green;
+font-weight: bold; 
+margin-top: 20px;
+}
+
+
+.fake-button:hover {
+    background-color: goldenrod;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+    }
+}
+
+
+/* About Us section styles */
+.about-us {
+  text-align: center;
+
+}
+
+.about-us h1 {
+  color: #b98b5a;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.about-us li::before {
+  position: absolute;
+}
+
+
+/* Font colors for different points */
+.about-us li {
+  color: #007bff;
+}
+
+/* Additional styles for fade-in animation */
+.fade-in-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* services.css */
+.services-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.residential-button,
+.commercial-button {
+  background-color: #ffd700; /* Golden yellow color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.residential-button:hover,
+.commercial-button:hover {
+  background-color: #ffa500; /* Slightly darker shade of orange */
+}
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 1rem;
+}
+/* Styles for the flex container */
+.flex {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Styles for each service container */
+.image-container {
+  flex-basis: calc(50% - 1rem);
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-5px);
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.index-services {
+  padding: 6rem 0; /* Increase padding to push content down */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    flex-basis: 100%;
+  }
+} 
+/* Styles for the "Our Plants" page section */
+/* Styles for the "Our Plants" page section */
+.our-plants-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* Set the background color to match the home page */
+  }
+
+
+.our-plants-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.our-plants-container:hover {
+  transform: translateY(-5px);
+}
+
+.our-plants-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.our-plants-caption {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Styles for the quiz */
+/* Styles for the quiz */
+.quiz-container {
+  text-align: center;
+}
+
+.quiz-area {
+  background-color: #ebbd8c;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Added padding for spacing */
+  border-radius: 10px; /* Added border radius for rounded corners */
+}
+
+.quiz-label {
+  background-color: #ebbd8c; /* Background color for the label */
+  color: #fff; /* Text color for the label */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  border-radius: 10px; /* Added border radius for rounded corners */
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.answer {
+  background-color: #ffaa00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.quiz-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #30475e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  line-height: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section styles */
+
+.contact-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* Set the background color to match the home page */
+  flex-grow: 1; /* Make the container take available space */
+}
+.contact-form {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-form .fake-button {
+  background-color: green;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50%;
+}
+
+.contact-form .fake-button:hover {
+  background-color: goldenrod;
+}
+
+.contact-message {
+  font-size: 18px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Add this to your existing CSS or a new CSS file */
+.contact-footer {
+  background-color: #30475e;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-footer p {
+  color: #ffffff;
+  text-decoration: none
+}
+
+.contact-footer a {
+  text-decoration: none;
+}
+
+
+
+
